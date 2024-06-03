@@ -10,4 +10,4 @@ After doing the booking ,by using the id
 the user may give the feedback in the feedback page
 
 
-![The ER diagram for the project!](/public/images/ERDiag.png "ER Diagram")
+![The ER diagram for the project!](/public/images/ERDiag.png "ER Diagram for the project")
