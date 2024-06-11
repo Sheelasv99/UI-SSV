@@ -19,7 +19,8 @@ const User = mongoose.model("User",userSchema);
 async function register(username,password)
 {
     const user = getUser(username);
-    if(user) throw Error('Username already Exists');
+    console.log(user);
+    if(user[0]) throw Error('Username already Exists');
 
     const newUser = await User.create({
         username: username,
