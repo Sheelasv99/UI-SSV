@@ -20,6 +20,7 @@ async function register(username,password)
 {
     const user = getUser(username);
     console.log(user);
+    console.log(user[0]);
     if(user[0]) throw Error('Username already Exists');
 
     const newUser = await User.create({
