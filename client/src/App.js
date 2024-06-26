@@ -7,10 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 
 const bookings = [
-  {
-    id: 1234,
-    roomtype: "TQNN"
-  },
+  
   {
     id: 4567,
     roomtype: "KNGN"
@@ -24,7 +21,7 @@ const bookings = [
 function App() {
   return (
     <div className="App">
-      <h1>Welcome To SS Resorts!!</h1>
+      <h1> Welcome to SS Resorts!!</h1>
       <Homepage/>
       <Login/>
       <Register/>

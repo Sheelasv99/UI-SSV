@@ -1,10 +1,10 @@
 const About =() =>{
    return(
      <div>
-        <h1 className="text-center">@About US@</h1>
+        <h1 className="text-center">About US</h1>
         <div className="container">
            <hr/>
-           <h2>Info !!!</h2>
+           <h2>Info...</h2>
            <hr/>
            <div className="row">
               <div className="col">

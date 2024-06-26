@@ -6,10 +6,60 @@ h1{
   text-shadow: 0cqh;
   text-decoration: double;
 }
+body, h1, h2, p, ul, li{
+  margin:0;
+  padding :0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background-color:lightcyan;
+  color: #333;
+}
 .App {
   text-align: center;
 }
-
+ul{
+  list-style-type: disc;
+  padding: 0;
+}
+li{
+  background-color:white;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  margin:10px 0;
+  padding:15px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+hr{
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+.container{
+  max-width:800px;
+  margin: 0 auto;
+  padding:20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.col{
+  flex:1;
+  padding:10px;
+  margin:10px;
+  background-color: #fff;
+  border:1px solid #ddd;
+  border-radius:4px;
+  text-align:center;
+  transition: box-shadow 0.3s ease;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
