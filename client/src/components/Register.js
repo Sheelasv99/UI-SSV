@@ -31,7 +31,7 @@ const Register =() =>{
                     <input type="password" id="password" name="password" required/>
 
                 </div>
-                <button type="submit">login</button>
+                <button type="submit">Register</button>
             </form>
 
          </div>
