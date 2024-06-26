@@ -6,7 +6,7 @@ const path = require('path');
 
 const userRoutes =require('./server/routes/user');
 const bookingRoutes =require('./server/routes/booking');
-const feedbackRoutes=reuqire('./server/routes/feedback');
+const feedbackRoutes=require('./server/routes/feedback');
 
 mongoose.connect(process.env.dbURL)
     .then(console.log("DB Connected!"))
