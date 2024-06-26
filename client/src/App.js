@@ -1,8 +1,8 @@
 
 import './App.css';
 import Bookings from './components/Bookings';
-
-
+import About from './components/About';
+import Homepage from './components/Homepage';
 const bookings = [
   {
     id: 1234,
@@ -22,6 +22,9 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome To SS Resorts Booking!!</h1>
+      <Homepage/>
+      <About/>
+      
       <Bookings bookings={bookings} />
     </div>
   );
