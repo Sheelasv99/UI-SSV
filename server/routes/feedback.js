@@ -1,5 +1,5 @@
 const express = require("express");
-const Book = require('../models/feedback'); 
+const Feedback = require('../models/feedback'); 
 const router = express.Router();
 
 
