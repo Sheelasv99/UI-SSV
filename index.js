@@ -6,6 +6,7 @@ const path = require('path');
 
 const userRoutes =require('./server/routes/user');
 const bookingRoutes =require('./server/routes/booking');
+const feedbackRoutes=reuqire('./server/routes/feedback');
 
 mongoose.connect(process.env.dbURL)
     .then(console.log("DB Connected!"))
@@ -26,6 +27,6 @@ app.use(function(req,res,next){
 
 app.use('/user',userRoutes);
 app.use('/booking',bookingRoutes);
-
+app.use('/feedback',feedbackRoutes);
 const PORT =process.env.PORT || 3000;
 app.listen(PORT,() => console.log('Server started on port ' +PORT));
