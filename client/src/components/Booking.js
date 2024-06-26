@@ -1,3 +1,8 @@
+const user ={
+     id:2345,
+     username : "sheela"
+}
+
 const booking=[
     {
         id:1234,
@@ -10,18 +15,16 @@ const booking=[
     {
         id:6543,
         roomtype:"SUITE ROOM TQNN"
-    }
+    },
 ]
-function booking(){
-    return(){
-        <div>
-          <h2>Room Type require</h2>
-          <ul>
-           { booking.map((booking) =>
-            <li key={booking.id}>{booking.roomtype}</li>
-              
-        )}
-          </ul>
-        </div>
-    }
+const Booking=() =>{
+    return {
+       <div>
+          <h2>{user.username}'s favourite room </h2>
+       </div>
+
+         
+     
+    };
 }
+export default Booking;
