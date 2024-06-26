@@ -1,6 +1,6 @@
 
 const mongoose = require("mongoose");
-
+const bcrypt = require('bcryptjs');
 const userSchema = new mongoose.Schema({
 
     Firstame: String,
@@ -21,21 +21,26 @@ async function register(username,password)
     console.log(user[0]);
     if(user[0]) throw Error('Username already Exists');
 
+    const salt = await bcrypt.genSalt(10);
+    const hashed =await bcrypt.hash(password,salt);
+
     const newUser = await User.create({
         username: username,
-        password: password
+        password: hashed
     });
 
-    return newUser
+    return newUser._doc;
 }
 //Login & Read
 async function login(username,password)
 {
     const user = await User.findOne({"username":username});
     if(!user) throw Error('User not found');
-    if(user.password != password) throw Error('Incorrect Password');
 
-    return user;
+    const isMatch= await bcrypt.compare(password,user.password);
+    if(!isMatch) throw Error('wrong Password');
+
+    return user._doc;
 }
 
 //Update
