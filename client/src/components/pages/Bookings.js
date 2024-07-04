@@ -1,10 +1,10 @@
 const user={
-    username:"sheela"
+    username:"Sheela"
 };
 const Booking = (props) => {
   return (
     <div>
-      <h2>{user.username}'s favourite Room Type</h2>
+      <h1>{user.username}'s Favourite RoomType</h1>
       <ul>
         {props.bookings.map((booking) => (
           <li key={booking.id}>{booking.roomtype}</li>

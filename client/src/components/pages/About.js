@@ -8,7 +8,7 @@ const About =() =>{
            <hr/>
            <div className="row">
               <div className="col">
-                  This is one of top rated Resort Near This beach place
+                  This is one of top rated Resort Near this beach place
 
               </div>
               <div className="col">
@@ -25,7 +25,5 @@ const About =() =>{
      </div>
 
    );
-
 };
-
 export default About;
